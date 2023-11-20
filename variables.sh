@@ -38,7 +38,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 container_repo="${container_repo:-nomionz}"
-container_name="${container_name:-docker-protoc}"
+container_name="${container_name:-go-protoc}"
 go_version="${go_version:-1.21.3}"
 protoc_version="${protoc_version:-24.4}"
 protoc_gen_go_version="${protoc_gen_go_version:-1.31}"

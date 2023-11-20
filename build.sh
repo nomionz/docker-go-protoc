@@ -3,7 +3,7 @@ set -e
 
 source ./variables.sh
 
-tag=${container_name}:${version}
+tag=${container_repo}/${container_name}
 
 echo "building container with tag ${tag}"
 

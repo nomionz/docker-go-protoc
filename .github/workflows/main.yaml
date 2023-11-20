@@ -4,7 +4,6 @@ name: Build and push
 on:
   push:
     paths-ignore:
-      - ".github/**"
       - "**.md"
     branches:
       - "main"
@@ -20,11 +19,11 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Build and push
         run: |
-          - chmod +x build.sh
-          - chmod +x push.sh
-          - ./build.sh
-          - ./push.sh
+          chmod +x build.sh
+          chmod +x push.sh
+          ./build.sh
+          ./push.sh
