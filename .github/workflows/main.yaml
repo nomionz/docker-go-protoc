@@ -25,5 +25,4 @@ jobs:
         run: |
           chmod +x build.sh
           chmod +x push.sh
-          ./build.sh
-          ./push.sh
+          ./build.sh && ./push.sh

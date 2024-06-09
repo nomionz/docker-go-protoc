@@ -39,9 +39,9 @@ done
 
 container_repo="${container_repo:-nomionz}"
 container_name="${container_name:-go-protoc}"
-go_version="${go_version:-1.21.3}"
-protoc_version="${protoc_version:-24.4}"
-protoc_gen_go_version="${protoc_gen_go_version:-1.31}"
+go_version="${go_version:-1.22.0}"
+protoc_version="${protoc_version:-26.1}"
+protoc_gen_go_version="${protoc_gen_go_version:-1.33}"
 protoc_gen_go_grpc_version="${protoc_gen_go_grpc_version:-1.3}"
 debian_version="${debian_version:-bullseye}"
 platform="${platform:-x86_64}"
